@@ -1,3 +1,4 @@
+'use client'
 export default function Loading() {
     return (
         <main className="bg-slate-500 mx-auto max-w-lg p-1 min-h-screen flex items-center justify-center">
