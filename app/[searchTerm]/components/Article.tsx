@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Props = {
     result: Article
 }
@@ -6,7 +8,7 @@ export default function Article({result}: Props) {
     return (
         <div key={result.pageId} className="flex gap-2 text-white px-2 py-4">
             {result.thumbnail &&
-                <img
+                <Image
                     src={result.thumbnail?.source}
                     alt=""
                     width={result.thumbnail?.width}
